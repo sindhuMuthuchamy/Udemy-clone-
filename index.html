@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udemy</title>
+    <!-- google font Gabarito link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap" rel="stylesheet">
+<!-- link my style sheet -->
+ <link rel="stylesheet" href="style.css">
+ <!-- font Awesome CDN link -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Navbar -->
+     <div class="navbar">
+        <div class="navbar__s1">
+            <!-- title section s1 -->
+             <h1 class="navbar__s1__title">Udemy</h1>
+        </div>
+        <div class="navbar__s2">
+            <!-- search section s2 -->
+            <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
+             <input placeholder="Search for Anything here like Business, etc.,">
+        </div>
+        <div class="navbar__s3">
+            <!-- icon section s3 -->
+             <p>Courses</p>
+             <p>My Learning</p>
+             <i class="fa-solid fa-cart-shopping" style="color: #000000;"></i>
+             <i class="fa-solid fa-bell" style="color: #000000;"></i>
+             <i class="fa-solid fa-user" style="color: #000205;"></i>
+        </div>
+        
+    </div>
+    <!-- categories -->
+    <div class="categories">
+        <p>Department</p>
+        <p>Business</p>
+        <p>IT & Software</p>
+        <p>Personal Development</p>
+        <p>Design</p>
+        <p>Marketing</p>
+        <p>Music</p>
+        <p>Lifestyle</p>
+        <p>Health & Fitness</p>
+    </div>
+    <!-- sale img -->
+    <div class="sale-img">
+        <img src="./Images/saleimgoptnl.jpg" alt="Image">
+    </div>
+    <!-- Recommended -->
+    <div class="recomended">
+        <h1 class="recomended__title">Recommended for You</h1>
+        <p>Pick the best fit</p>
+        <div class="recomended__container">
+            <div class="course-card">
+                <img src="./Images/c1.jfif" alt="EMC" width="300px" height="220px">
+                <h3>Full-Stack Web Development course 2024 with Error Makes Clever</h3>
+                <p>Agnel John </p>
+                <p>4.9 ⭐⭐⭐⭐</p>
+                <p><strong>₹999 </strong> <del>5999</del></p>
+                <p class="course-card__highlight">Best Seller</p>
+            </div>
+            <div class="course-card">
+                <img src="./Images/c3.jfif" alt="JS" width="300px" height="220px">
+                <h3>The Complete JavaScript course 2024</h3>
+                <p>Johnas Schmedtmann</p>
+                <p>3.6 ⭐⭐⭐</p>
+                <p><strong>₹599 </strong><del>2199</del></p>
+            </div>
+            <div class="course-card">
+                <img src="./Images/c2.jfif" alt="Web development Bootcamp" width="300px" height="220px">
+                <h3>The Complete Web Development Bootcamp</h3>
+                <p>Colt Steele</p>
+                <p>4.7 ⭐⭐⭐⭐</p>
+                <p><strong>₹799 </strong><del>4999</del></p>                
+                <p class="course-card__highlight">Best Seller</p>
+            </div>
+            <div class="course-card">
+                <img src="./Images/c4.jfif" alt="Android app development" width="300px" height="220px">
+                <h3>The Complete Android App Development Master class</h3>
+                <p>Denis Panjuta</p>
+                <p>4.4 ⭐⭐⭐⭐</p>
+                <p><strong>₹999 </strong><del>3099</del></p>
+            </div>
+        </div>
+    </div>-
+    <!-- Topics -->
+     <div class="topics">
+        <h1 class="topics__title">Topics Recommended for you </h1>
+        <div class="topics__container">
+            <p>Website</p>
+            <p>JavaScript</p>
+            <p>CSS</p>
+            <p>MongoDB</p>
+            <p>AWS</p>
+            <p>Azure</p>
+            <p>Docker</p>
+            <p>GitHub</p>
+            <p id="topics__container__change">React JS</p> 
+        </div>
+    </div>
+    <!-- Popular -->
+     <div class="popular">
+        <h1 class="popular__title">Most Popular</h1>
+        <p class="popular__subtitle">Pic the best fit</p>
+
+        <div class="popular__container">
+            <div class="course-card">
+                <img src="./Images/web3.jfif" alt="Web development Bootcamp" width="300px" height="220px">
+                <h3>The Complete 2024 Web Development Bootcamp</h3>
+                <p>Dr. Angeia Yu, Developer & Lead Instructor</p>
+                <p>4.9 ⭐⭐⭐⭐</p>
+                <p><strong> ₹799 </strong><del>4999</del></p> 
+                <!-- <div class="course-card__highlight">                -->
+                <p class="course-card__highlight">Best Seller</p>
+                <!-- <p class="course-card__highlight__1">Buy Now</p>
+                </div> -->
+            </div>
+            <div class="course-card">
+                <img src="./Images/p1.jfif" alt="EMC" width="300px" height="220px">
+                <h3>Build Responsive Real-World Website with HTML and CSS</h3>
+                <p>Johnas Schmedtmann</p>
+                <p>4.7 ⭐⭐⭐⭐</p>
+                <p><strong>₹599 </strong><del>5999</del></p>
+                <p class="course-card__highlight">Best Seller</p>
+            </div>
+            <div class="course-card">
+                <img src="./Images/nodejs.jfif" alt="JS" width="300px" height="220px">
+                <h3>Learn and Understand NodeJS</h3>
+                <p>Anthony Alicaa</p>
+                <p>4.5 ⭐⭐⭐⭐</p>
+                <p><strong>₹599</strong> <del>2199</del></p>
+            </div>
+            <div class="course-card">
+                <img src="./Images/mongodb.jfif" alt="Web development Bootcamp" width="300px" height="220px">
+                <h3>MongoDB-The Complete Developer's Guide 2024</h3>
+                <p>Maximilian Schwarzmuller</p>
+                <p>4.7 ⭐⭐⭐⭐</p>
+                <p><strong>₹799 </strong> <del>4999</del></p>                
+                <p class="course-card__highlight">Best Seller</p>
+            </div>
+            <div class="course-card">
+                <img src="./Images/web2.jfif" alt="Android app development" width="300px" height="220px">
+                <h3>Ultimate Web Designer & Web Developer Course</h3>
+                <p>Brad Hussey</p>
+                <p>4.2 ⭐⭐⭐⭐</p>
+                <p><strong>₹499</strong> <del>3099</del></p>
+            </div>
+            <div class="course-card">
+                <img src="./Images/web1.jfif" alt="Web development Bootcamp" width="300px" height="220px">
+                <h3>The Complete Web Development Course</h3>
+                <p>Rob Percival</p>
+                <p>4.0 ⭐⭐⭐⭐</p>
+                <p><strong>₹699</strong><del>4999</del></p>                
+            </div>
+            <div class="course-card">
+                <img src="./Images/js1.jfif" alt="Web development Bootcamp" width="300px" height="220px">
+                <h3>JavaScript - Basics for Beginner Level</h3>
+                <p>Mosh Hamedani</p>
+                <p>4.6 ⭐⭐⭐⭐</p>
+                <p><strong>₹499</strong><del>4999</del></p>                
+                <p class="course-card__highlight">Best Seller</p>
+            </div>
+            <div class="course-card">
+                <img src="./Images/js2.png" alt="Web development Bootcamp" width="300px" height="220px">
+                <h3>JavaScript: Understanding the Weird part</h3>
+                <p>Anthony Alicaa</p>
+                <p>4.7 ⭐⭐⭐⭐</p>
+                <p><strong>₹799 </strong><del>4999</del></p>                
+            </div>
+        </div>
+        <!-- Footer -->
+         <div class="footer">
+            <div class="footer__s1">
+                <div class="footer__s1__d1">
+                    <p>Udemy Business</p>
+                    <p>Teach on Udemy</p>
+                    <p>Get the App</p>
+                    <p>About Us</p>
+                    <p>Contact Us</p>
+                </div>
+                <div class="footer__s1__d2">
+                    <p>Career</p>
+                    <p>Blog</p>
+                    <p>Help and Support</p>
+                    <p>Affiliate</p>
+                    <p>Investor</p>
+                </div>
+            </div>
+            <div class="footer__s2">
+                <h1>Udemy</h1>
+                <p>&copy;2024 Udemy, Inc</p>
+            </div>
+         </div>
+     </div>
+
+</body>
+</html>
