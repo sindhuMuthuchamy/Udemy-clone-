@@ -48,6 +48,9 @@ body{
     align-items: center;
     padding-right: 10px ;
 }
+.navbar__s4{
+    display: none;
+}
 /* .navbar__s3 p:hover{
     background-color: silver;
     color: black;
@@ -103,23 +106,18 @@ body{
 }
 .sale-img__offer{
     width:30%;
-    /* height: 110px; */
     background-color: gainsboro;
-    z-index: 2;
     position: absolute;
-    /* top: 250px; */
-    /* left: 90px;*/
     top: 30%;
     left: 10%;
     border: solid aqua 1px;
-    /* border-radius: 10% 60% 10% 60% / 60% 10% 60% 10%; */
-    /* text-align: center; */
     padding: 20px;
     animation-name: zoom;
     animation-duration: 2s;
     opacity: 0;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
+    /* z-index: 1; */
 }
 @keyframes zoom{
     0%{
@@ -155,12 +153,15 @@ body{
 .recomended__container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 10px;
 }
 .course-card{
-    width: 300px;
-    height: 400px;   
+    /* width: 200px;
+    height: 400px;  */
+    flex-grow: 1;
+    flex-basis: 20%;  
+    margin: 5px;
 }
 .course-card:hover{
     /* background-color: rgb(248, 244, 244);
@@ -196,29 +197,29 @@ body{
     border-radius: 30px;
     padding: 10px;
     flex-grow: 1;
-    flex-basis: 20%;
-    /* flex-basis: 25%; */
+    /* flex-basis: 20%; */
+    flex-basis: 25%;
     text-align: center;
     color: grey;
 }
-#topics__container__change{
+/* #topics__container__change{
     border: solid grey 2px;
     border-radius: 30px;
     /* width: 300px; */
     /* padding: 10px; */
     /* padding-left: 40px; */
-    text-align: center;
+    /* text-align: center;
     flex-wrap: nowrap;
     flex-grow: 0;
     flex-basis: 300px;
     color: grey;
-}
-.topics__container p:hover{
+} */
+/* .topics__container p:hover{
     cursor: pointer;
     background-color: silver;
     color: black;
     font-size: 18px;
-}
+} */ 
 .popular{
     padding: 10px;
 }
@@ -256,5 +257,56 @@ body{
     font-size: 18px;
 }
 
+/* Media Queries */
+@media screen and (max-width:800px) {
+    body{
+        font-size: 11px;
+    } 
+    .navbar__s2 input{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:600px) {
+    .body{
+        margin: 0;
+    }
+    .course-card{
+        flex-grow: 1;
+        flex-basis: 40%;
+        /* width: 80px;
+        height: 330px;
+        gap: 10px;
+        margin: 10px; */
+    }
+    .course-card img{
+        width: 220px;
+    }
+    /* .sale-img__offer{
+        width: 130px;
+        height: 30px;
+        margin-bottom: 50px;
+        padding: 10px;
+        border-radius: 0;
+    } */
+    .sale-img__offer h2{
+        font-size: 12px;
+    }
+    .sale-img__offer p{
+        display: none;
+    }
+    .navbar__s2{
+        display: none;
+    }
+    .navbar__s3{
+        display: none;
+    }
+    .categories{
+        display: none;
+    }
+    .navbar__s4{
+        display: block;
+    }
+    
+}
 
 
