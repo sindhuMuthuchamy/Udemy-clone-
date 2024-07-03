@@ -294,7 +294,7 @@ body{
     }
     .course-card{
         flex-grow: 1;
-        flex-basis: 40%;
+        flex-basis: 35%;
         margin: 5px;
         /* width: 80px;
         height: 330px;
