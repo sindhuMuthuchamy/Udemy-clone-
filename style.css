@@ -294,15 +294,18 @@ body{
     }
     .course-card{
         flex-grow: 1;
-        flex-basis: 220px;
+        flex-basis: 40%;
+        margin: 5px;
         /* width: 80px;
         height: 330px;
         gap: 10px;
         margin: 10px; */
     }
     .course-card img{
+        width: 200px;
+        }
+    .course-card h3{
         width: 220px;
-        height: 220;
     }
     /* .sale-img__offer{
         width: 130px;
