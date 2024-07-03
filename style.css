@@ -302,10 +302,11 @@ body{
         margin: 10px; */
     }
     .course-card img{
-        width: 200px;
+        width: 150px;
+        height: 150px;
         }
     .course-card h3{
-        width: 220px;
+        width: 150px;
     }
     /* .sale-img__offer{
         width: 130px;
@@ -315,7 +316,7 @@ body{
         border-radius: 0;
     } */
     .sale-img__offer h2{
-        font-size: 12px;
+        font-size: 10px;
     }
     .sale-img__offer p{
         display: none;
